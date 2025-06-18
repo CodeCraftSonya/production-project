@@ -9,7 +9,8 @@
     "lint:ts": "eslint \"**/*.{ts,tsx}\"",
     "lint:ts:fix": "eslint \"**/*.{ts,tsx}\" --fix",
     "lint:scss": "stylelint \"**/*.scss\"",
-    "lint:scss:fix": "stylelint \"**/*.scss\" --fix"
+    "lint:scss:fix": "stylelint \"**/*.scss\" --fix",
+    "format": "prettier \"**/*.{ts,tsx,js,jsx,json,css,scss,md}\" --write"
   },
   "keywords": [],
   "author": "",
@@ -27,6 +28,8 @@
     "@types/webpack-dev-server": "^4.7.1",
     "css-loader": "^7.1.2",
     "eslint": "^9.29.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.5.0",
     "eslint-plugin-react": "^7.37.5",
     "globals": "^16.2.0",
     "html-webpack-plugin": "^5.6.3",
