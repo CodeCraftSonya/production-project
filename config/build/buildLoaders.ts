@@ -21,7 +21,7 @@ export function buildLoaders({isDev}: BuildOptions): webpack.RuleSetRule[] {
             exclude: /node_modules/,
             use: [
                 {
-                    loader: require.resolve('ts-loader'),
+                    loader: 'ts-loader',
                     options: {
                         getCustomTransformers: () => ({
                             before: [isDev && ReactRefreshTypeScript()].filter(Boolean),

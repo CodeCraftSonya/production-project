@@ -1,3 +1,5 @@
+import * as React from 'react';
+
 declare module '*.module.scss' {
     const classes: { [key: string]: string };
     export default classes;
