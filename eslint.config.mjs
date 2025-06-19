@@ -14,6 +14,7 @@ export default defineConfig([
       parser: tseslint.parser,
       globals: {
         ...globals.browser,
+        ...globals.jest,
         __IS_DEV__: true,
       },
     },
