@@ -20,6 +20,7 @@ export function buildPlagins({paths, isDev}: BuildOptions): webpack.WebpackPlugi
             __IS_DEV__: JSON.stringify(isDev),
         }),
         new BundleAnalyzerPlugin({
+            analyzerMode: 'disabled',
             openAnalyzer: false
         }),
     ]

@@ -1,3 +1,28 @@
 {
-  "presets": ["@babel/preset-env", "@babel/preset-typescript"]
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-typescript",
+    [
+      "@babel/preset-react",
+      {
+        "runtime": "automatic"
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "alias": {
+          "shared": "./src/shared",
+          "entities": "./src/entities",
+          "features": "./src/features",
+          "pages": "./src/pages",
+          "widgets": "./src/widgets",
+          "app": "./src/app"
+        }
+      }
+    ]
+  ]
 }
